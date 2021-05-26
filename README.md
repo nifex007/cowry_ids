@@ -17,9 +17,16 @@ This assumes you have virtualenv installed
 
 ```bash
 cd cowry_ids
-virtuanlenv venv
+virtualenv venv
 source venv/bin/activate
 pip install -r requirements.txt
 python manage.py migrate
 python manage.py runserver
 ```
+
+## Tests 
+### Docker
+`sudo docker-compose run web python manage.py test`
+
+### Virtual environment
+`python manage.py test`
