@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.http import HttpResponse
 from rest_framework.views import APIView
 from identifiers.serializers import IdentifiersSerializer
 from identifiers.models import Identifier
@@ -7,6 +8,9 @@ from rest_framework import status
 
 
 # Create your views here.
+def index(request):
+    return HttpResponse('<h1 style="text-align:center; font-size: 50px; margin-top: 25%">Cowry Identifiers</h1>')
+
 
 class IdentifiersView(APIView):
     serializer_class = IdentifiersSerializer
