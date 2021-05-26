@@ -23,6 +23,7 @@ pip install -r requirements.txt
 python manage.py migrate
 python manage.py runserver
 ```
+Go to `http://127.0.0.1:8000/api/identifiers`
 
 ## Tests 
 ### Docker
